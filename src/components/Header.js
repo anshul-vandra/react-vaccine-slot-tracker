@@ -12,8 +12,8 @@ function Header() {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" style={{ justifyContent: 'flex-end', paddingRight: "1.5rem" }}>
                 <Nav>
-                    <NavLink activeClassName="active" className="nav-link" to="/website/pin">Find By Pin</NavLink>
-                    <NavLink activeClassName="active" className="nav-link" to="/website/district">Find By District</NavLink>
+                    <NavLink activeClassName="active" className="nav-link" to="/pin">Find By Pin</NavLink>
+                    <NavLink activeClassName="active" className="nav-link" to="/">Find By District</NavLink>
                     {/* <NavLink activeClassName="active" className="nav-link" to="/about">Covid Protocols</NavLink> */}
                 </Nav>
             </Navbar.Collapse>

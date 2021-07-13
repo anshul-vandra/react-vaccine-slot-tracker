@@ -13,9 +13,8 @@ function App() {
       <Header />
       <ToastContainer limit={3} />
       <Switch>
-        <Route path='/website/pin' exact component={Pin}></Route>
-        <Route path='/website/district' exact component={District}></Route>
-        <Redirect to="/website/district" />
+        <Route path='/pin' exact component={Pin}></Route>
+        <Route path='/' exact component={District}></Route>
       </Switch>
     </div>
   );
