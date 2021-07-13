@@ -1,0 +1,33 @@
+.active {
+  color: rgb(13, 29, 173) !important;
+}
+
+.badge {
+  display: inline-block;
+  padding: .35em .65em;
+  font-size: 0.9rem !important;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+}
+.badge-pill {
+  padding-right: .6em;
+  padding-left: .6em;
+  border-radius: 30rem;
+}
+.badge-danger {
+  color: #fff;
+  background-color: red;
+}
+.badge-warning {
+  color: #fff;
+  background-color: darkgray
+}
+.badge-success {
+  color: #fff;
+  background-color: green;
+}
