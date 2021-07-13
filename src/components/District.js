@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Card from 'react-bootstrap/Card'
 import FormControl from 'react-bootstrap/FormControl'
 import Form from 'react-bootstrap/Form'
@@ -20,7 +20,7 @@ const override = css`
 
 function District() {
 
-    const [states, setState] = useState([])
+    const states = []
     const [district, setDistrict] = useState([])
     const [date, setDate] = useState('')
     const [center, setCenter] = useState([])
@@ -32,11 +32,11 @@ function District() {
 
     let current_date = moment().format('YYYY-MM-DD')
 
-    useEffect(() => {
-        axios.get("http://13.235.242.157:5000/lookup/states")
-            .then(res => setState(res.data.data))
-            .catch()
-    }, [])
+    // useEffect(() => {
+    //     axios.get("http://13.235.242.157:5000/lookup/states")
+    //         .then(res => setState(res.data.data))
+    //         .catch()
+    // }, [])
 
     let districtData = (state_id) => {
         axios.post("http://13.235.242.157:5000/lookup/districts", { state_id: state_id })
